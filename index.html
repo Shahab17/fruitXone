@@ -40,36 +40,59 @@
 <body class="font-lato">
 
   <header class="container mx-auto">
+
+   
+
     <nav class="my-14">
-      <div class="navbar bg-theme rounded-full">
-        <div class="navbar-start">
+      <div class="navbar bg-theme lg:rounded-full">
+        <div class="navbar-start    ">
+          <div class="hidden w-72 lg:flex list-none gap-7 pl-12 text-lg text-white font-medium">
+            <li>Home</li>
+            <li>About </li>
+            <li>Shop</li>
+            <li> Fruits</li>
+          </div>
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden btn-circle">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             </label>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Homepage</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruit</a></li>
             </ul>
           </div>
         </div>
-        <div class="navbar-center">
-          <a class="btn btn-ghost normal-case text-xl text-white">Fruit Xone</a>
+        <div class="navbar-center hidden lg:flex lg:justify-center lg:items-center text-center w-1/2 ml-12  ">
+         
+          <img class="mr-4 " src="./images/logo.png" alt="">
+          <a class="  normal-case text-4xl py-7 text-white font-extrabold">Fruit Xone</a>
+        
         </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle text-white">
+        <div class="navbar-end w-full  ">
+          <div class="flex justify-end items-center     lg:hidden ">
+            <img class="mr-4 " src="./images/logo.png" alt="">
+            <a class="  normal-case text-2xl lg:text-4xl py-7 text-white font-extrabold">Fruit Xone</a>
+          </div>
+          <div class="relative  lg:pr-11 ">
+            <input class="hidden lg:block  py-4 px-6 rounded-full w-[350px]   outline-none " type="text" placeholder="Search Here" >
+          </div>
+          <button class=" absolute btn-circle end-28 hidden lg:block ">
             
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
           </button>
           
         </div>
       </div>
-    </nav>
+    </nav>  
     <!-- banner section -->
     <div class="carousel w-full">
       <div id="slide1" class="carousel-item relative w-full">
         <img src="./images/banner1.png" class="w-full" />
+        <div class="absolute z-10 text-white">
+          adfdf
+        </div>
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
           <a href="#slide4" class="btn btn-circle">❮</a> 
           <a href="#slide2" class="btn btn-circle">❯</a>
